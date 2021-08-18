@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>獲獎無數的百富單一麥芽威士忌 | 百富系列酒款</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 47em;
+
+        }
+
+        .content2 img,
+        .content3 img,
+        .content4 img,
+        .content5 img,
+        .content6 img,
+        .content7 img,
+        .content8 img {
+            width: 80%;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 70%;
+            height: 150px;
+            text-align: center;
+            color: #595a54;
+            margin: 0 auto;
+        }
+
+        .content1 h1 {
+            margin: 130px 0 20px 0;
+        }
+
+        .content2,
+        .content3,
+        .content4,
+        .content5,
+        .content6,
+        .content7,
+        .content8 {
+            width: 100%;
+            height: 35em;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content2-pic1,
+        .content2-pic2,
+        .content2-pic3,
+        .content3-pic1,
+        .content3-pic2,
+        .content3-pic3,
+        .content4-pic1,
+        .content4-pic2,
+        .content4-pic3,
+        .content5-pic1,
+        .content5-pic2,
+        .content5-pic3,
+        .content6-pic1,
+        .content6-pic2,
+        .content6-pic3,
+        .content7-pic1,
+        .content7-pic2,
+        .content7-pic3,
+        .content8-pic1,
+        .content8-pic2 {
+            width: 20%;
+            margin: 5em;
+        }
+
+        .content8-right {
+            width: 22%;
+            height: 200px;
+            margin: 20px;
+            border-left: 1px #595a54 solid;
+        }
+
+        .content8-right p,
+        h4 {
+            text-align: left;
+            margin: 20px;
+            color: #595a54;
+        }
+
+        .content8-right h4 {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        .content9 {
+            text-align: center;
+        }
+
+        .content9 img {
+            width: 50%;
+        }
+
+        .content9 h1 {
+            color: #595a54;
+            margin: 20px;
+        }
+
+        p,
+        h2 {
+            color: #595a54;
+            margin: 5px 10px;
+        }
+
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        .hr-line {
+            width: 100px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 20px auto;
+        }
+
+        .hr-line-left {
+            width: 7em;
+            border-bottom: 1px #acaca9 solid;
+            margin: 1em 0 1em 8.5em;
+        }
+
+        .hr-line {
+            width: 100px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 20px auto;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /*********************手機板**********************/
+        @media screen and (max-width: 700px) {
+            img {
+                width: 60%;
+            }
+
+            .logo {
+                margin: 0 15%;
+            }
+
+            header a {
+                margin: 0;
+            }
+
+            .content2,
+            .content3,
+            .content4,
+            .content5,
+            .content6,
+            .content7,
+            .content8 {
+                height: 25em;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width:1000px) {
+
+            .content2-pic1,
+            .content2-pic2,
+            .content2-pic3,
+            .content3-pic1,
+            .content3-pic2,
+            .content3-pic3,
+            .content4-pic1,
+            .content4-pic2,
+            .content4-pic3,
+            .content5-pic1,
+            .content5-pic2,
+            .content5-pic3,
+            .content6-pic1,
+            .content6-pic2,
+            .content6-pic3,
+            .content7-pic1,
+            .content7-pic2,
+            .content7-pic3,
+            .content8-pic1,
+            .content8-pic2 {
+                margin: 3em;
+            }
+        }
+
+        @media screen and (min-width: 1300px) and (max-width:1500px) {
+            .hr-line-left {
+                margin: 1em 0 1em 6em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) and (max-width:1299px) {
+            .hr-line-left {
+                margin: 1em 0 1em 5em;
+            }
+        }
+
+        @media screen and (min-width: 700px) and (max-width:999px) {
+            .hr-line-left {
+                margin: 1em 0 1em 3em;
+            }
+        }
+
+        @media screen and (min-width: 499px) and (max-width:699px) {
+            .hr-line-left {
+                margin: 1em 0 1em 1em;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .content8-right h4 {
+                font-size: 1em;
+                line-height: 2em;
+            }
+        }
+
+        @media screen and (min-width: 400px) and (max-width:600px) {
+
+            .content2-pic1,
+            .content2-pic2,
+            .content2-pic3,
+            .content3-pic1,
+            .content3-pic2,
+            .content3-pic3,
+            .content4-pic1,
+            .content4-pic2,
+            .content4-pic3,
+            .content5-pic1,
+            .content5-pic2,
+            .content5-pic3,
+            .content6-pic1,
+            .content6-pic2,
+            .content6-pic3,
+            .content7-pic1,
+            .content7-pic2,
+            .content7-pic3,
+            .content8-pic1,
+            .content8-pic2 {
+                margin: 2em;
+            }
+
+            .hr-line-left {
+                margin: 1em 0 1em 0;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+
+            .copyright img {
+                width: 10%;
+            }
+        }
+
+        /*****************************************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        /* input {
+            display: none;
+        } */
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+
+        .burger-check {
+            display: none;
+        }
+
+        #btn_total {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+
+        #btn_find {
+            padding: 2px;
+        }
+
+        .serch_order {
+            padding: 0 0 20px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <section class="content1" data-aos="fade-right">
+            <h1>百富全系列酒款</h1>
+            <hr class="hr-line">
+            <p>首席調酒師大衛史都華所製作的百富單一麥芽威士忌系列。 每一款酒皆有其特殊風味，口感醇厚豐富而順口，都帶著特殊的香甜蜂蜜味道
+            </p>
+        </section>
+        <section class="content2" data-aos="fade-left">
+            <div class="content2-pic1">
+                <img src="/static/images/our-whisky-range-product/c2-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>DoubleWood 12</h2>
+                <hr class="hr-line-left">
+                <p>百富雙桶12年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="1">
+            </div>
+            <div class="content2-pic2">
+                <img src="/static/images/our-whisky-range-product/c2-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>DoubleWood 17</h2>
+                <hr class="hr-line-left">
+                <p>百富雙桶17年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="2">
+
+            </div>
+            <div class="content2-pic3">
+                <img src="/static/images/our-whisky-range-product/c2-3.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Caribbean Cask 14</h2>
+                <hr class="hr-line-left">
+                <p>百富加勒比海蘭姆桶14年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="3">
+
+            </div>
+        </section>
+        <section class="content3" data-aos="fade-right">
+            <div class="content3-pic1">
+                <img src="/static/images/our-whisky-range-product/c3-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>PortWood</h2>
+                <hr class="hr-line-left">
+                <p>百富波特桶21年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="4">
+
+            </div>
+            <div class="content3-pic2">
+                <img src="/static/images/our-whisky-range-product/c3-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Thirty</h2>
+                <hr class="hr-line-left">
+                <p>百富30年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="5">
+
+            </div>
+            <div class="content3-pic3">
+                <img src="/static/images/our-whisky-range-product/c3-3.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Forty</h2>
+                <hr class="hr-line-left">
+                <p>百富40年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="6">
+
+            </div>
+        </section>
+        <section class="content4" data-aos="fade-left">
+            <div class="content4-pic1">
+                <img src="/static/images/our-whisky-range-product/c4-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Peated Cask</h2>
+                <hr class="hr-line-left">
+                <p>百富17年泥媒桶單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="7">
+
+            </div>
+            <div class="content4-pic2">
+                <img src="/static/images/our-whisky-range-product/c4-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Triple Cask 12</h2>
+                <hr class="hr-line-left">
+                <p>百富三桶12年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="8">
+
+            </div>
+            <div class="content4-pic3">
+                <img src="/static/images/our-whisky-range-product/c4-3.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Single Barrel 25 </h2>
+                <hr class="hr-line-left">
+                <p>百富25年單一酒桶單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="9">
+
+            </div>
+        </section>
+        <section class="content5" data-aos="fade-right">
+            <div class="content5-pic1">
+                <img src="/static/images/our-whisky-range-product/c5-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Tun 1509 BATCH NO. 1</h2>
+                <hr class="hr-line-left">
+                <p>百富TUN 1509 號桶 第一批次單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="10">
+
+            </div>
+            <div class="content5-pic2">
+                <img src="/static/images/our-whisky-range-product/c5-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Tun 1509 BATCH NO.2</h2>
+                <hr class="hr-line-left">
+                <p>百富TUN 1509 號桶 第二批次單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="11">
+
+            </div>
+            <div class="content5-pic3">
+                <img src="/static/images/our-whisky-range-product/c5-3.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Single Barrel 12</h2>
+                <hr class="hr-line-left">
+                <p>百富12年單一酒桶單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="12">
+
+            </div>
+        </section>
+        <section class="content6" data-aos="fade-left">
+            <div class="content6-pic1">
+                <img src="/static/images/our-whisky-range-product/c6-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Cask 4567</h2>
+                <hr class="hr-line-left">
+                <p>百富50年珍稀酒款 4567號桶</p>
+                <input type="number" class="product" data-id="13">
+
+            </div>
+            <div class="content6-pic2">
+                <img src="/static/images/our-whisky-range-product/c6-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Madeira Cask</h2>
+                <hr class="hr-line-left">
+                <p>百富21年馬德拉桶單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="14">
+
+            </div>
+            <div class="content6-pic3">
+                <img src="/static/images/our-whisky-range-product/c6-3.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Triple Cask 16</h2>
+                <hr class="hr-line-left">
+                <p>百富三桶16年單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="15">
+
+            </div>
+        </section>
+        <section class="content7" data-aos="fade-right">
+            <div class="content7-pic1">
+                <img src="/static/images/our-whisky-range-product/c7-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Tun 1509 BATCH NO. 3</h2>
+                <hr class="hr-line-left">
+                <p>百富TUN 1509 號桶 第三批次單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="16">
+
+            </div>
+            <div class="content7-pic2">
+                <img src="/static/images/our-whisky-range-product/c7-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Tun 1858 BATCH NO.4</h2>
+                <hr class="hr-line-left">
+                <p>百富TUN 1858號桶 第四批次單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="17">
+
+            </div>
+            <div class="content7-pic3">
+                <img src="/static/images/our-whisky-range-product/c7-3.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Tun 1858 BATCH NO.5</h2>
+                <hr class="hr-line-left">
+                <p>百富TUN 1858號桶 第五批次單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="18">
+
+            </div>
+        </section>
+        <section class="content8" data-aos="fade-left">
+            <div class="content8-pic1">
+                <img src="/static/images/our-whisky-range-product/c8-1.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Single Barrel 15</h2>
+                <hr class="hr-line-left">
+                <p>百富15年單一雪莉桶單一麥芽威士忌</p>
+                <input type="number" class="product" data-id="19">
+
+            </div>
+            <div class="content8-pic2">
+                <img src="/static/images/our-whisky-range-product/c8-2.jpg" alt="">
+                <p>The BALVENIE</p>
+                <h2>Cask 4570</h2>
+                <hr class="hr-line-left">
+                <p>百富50年珍稀酒款 4570號桶</p>
+                <input type="number" class="product" data-id="20">
+
+            </div>
+            <div class="content8-right">
+                <p>-DAVID STEWART</p>
+                <h4>我可以充滿自信地說我擁有世界上最棒的工作。</h4>
+            </div>
+        </section>
+        <section class="content9">
+            <input type="button" id="btn_total" class="btn_submit" value="確定">
+            <form class="serch_order">
+                查詢訂單：<input type="text" id="btn_find" class="btn_find">
+                <input id="submit" type="button" value="查詢">
+                <input id="submit_delete" type="button" class="btn_delete" value="刪除">
+                數量 <input type="text" id="btn_update">
+                <input id="submit_update" type="button" class="btn_update" value="更改">
+            </form>
+            <img src="/static/images/our-whisky-range-product/c9-1.jpg" alt="">
+            <h1>百富首席調酒師典藏系列珍稀原酒</h1>
+            <hr class="hr-line">
+            <p>由首席調酒師大衛史都華嚴選的珍稀單桶威士忌系列。典藏系列分成五個章節，
+                詮釋了大衛超過半世紀的威士忌豐富經驗及貢獻。</p>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕
+                <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+
+        </div>
+    </wrapper>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        //  $('.btn_submit').on('click', function () {
+        //     let total_count = $('.product_1').val();
+        //     console.log(total_count);
+
+        $('#btn_total').on('click', function () {
+            let all_datas = { 'post_datas': [] }
+            $.each($('.product'), function (i, item) {
+                let product_id = $(item).data('id');
+                let count = $(item).val();
+                if (count) {
+                    all_datas['post_datas'].push({ 'id': product_id, 'count': count })
+                }
+            })
+            console.log(all_datas);
+            // $('.btn_submit').click(function () {
+            //     var arr = [];
+            //     $("input[type='number']").each(function () {
+            //         let total_count = arr.push($(this).val());
+            //     })
+            //     console.log(total_count);
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('create') }}",
+                dataType: "json",
+                data: JSON.stringify(all_datas),
+                contentType: 'application/json; charset=UTF-8',
+                success: function (data) {
+                    console.log(data);
+                    alert(data['message'])
+                },
+                error: function (xhr) {
+                    alert(xhr.status);
+                }
+            });
+        })
+        $('#submit').on('click', function () {
+
+            let order_id = $("#btn_find").val();
+
+            $.ajax({
+                type: "GET",
+                url: "{{ url_for('get_detail') }}",
+                dataType: "json",
+                data: { 'order_id': order_id },
+                contentType: 'application/x-www-form-urlencoded',
+                success: function (data) {
+                    console.log(data);
+                    alert(data['message']);
+                    alert("購買商品:" + data['datas']['product_name'] + "   商品數量:" + data['datas']['total_count']);
+                },
+                error: function (xhr) {
+                    alert(xhr.status);
+                }
+            });
+        })
+        $('#submit_delete').on('click', function () {
+            let order_id = $("#btn_find").val();
+            console.log(order_id);
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('delete') }}",
+                dataType: "json",
+                data: { 'order_id': order_id },
+                contentType: 'application/x-www-form-urlencoded',
+                success: function (data) {
+                    console.log(data);
+                    alert(data['message']);
+
+                },
+                error: function (xhr) {
+                    alert(xhr.status);
+                }
+            });
+        })
+
+        $('#submit_update').on('click', function () {
+            let order_id = $("#btn_find").val();
+            let total_count = $("#btn_update").val();
+            console.log(order_id);
+            console.log(total_count)
+            $.ajax({
+                type: "POST",
+                url: "{{ url_for('update') }}",
+                dataType: "json",
+                data: { 'order_id': order_id, 'total_count': total_count },
+                contentType: 'application/x-www-form-urlencoded',
+                success: function (data) {
+                    console.log(data);
+                    alert(data['message']);
+
+                },
+                error: function (xhr) {
+                    alert(xhr.status);
+                }
+            });
+        })
+
+    </script>
+</body>
+
+</html>

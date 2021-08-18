@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百富雙桶12年單一麥芽威士忌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 20em;
+
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 100%;
+            height: 75em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .content1-left {
+            width: 60%;
+            margin: 0 0 0 10em;
+            height: 50em;
+
+        }
+
+        .content1-left p {
+            line-height: 20px;
+            color: #595a54;
+            margin: 10px 0 10px 30px;
+        }
+
+        .content1 h1 {
+            margin: 20px 0 0 0;
+            font-size: 18px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #595a54;
+            font-family: "Microsoft JhengHei";
+            margin: 5px 0 0 0;
+            line-height: 40px;
+        }
+
+        h5 {
+            color: #595a54;
+            line-height: 50px;
+            margin: 0 0 0 30px;
+            font-size: 20px;
+        }
+
+        .content1-left-in {
+            border-left: 1px #acaca9 solid;
+        }
+
+        .content1-right {
+            width: 50%;
+            margin: 80px 0 0 0;
+            text-align: center;
+        }
+
+        .content1-right img {
+            width: 50%;
+        }
+
+        .content1-right-img {
+            width: 50%;
+        }
+
+        .content2 {
+            width: 100%;
+            height: 45em;
+            text-align: center;
+        }
+
+        .content3 {
+            width: 100%;
+            height: 35em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content3-left {
+            width: 30%;
+        }
+
+        .content3-left iframe {
+            width: 70%;
+        }
+
+        .content3-right {
+            width: 50%;
+
+        }
+
+        .content3-right img {
+            width: 80%;
+        }
+
+        .content2 iframe {
+            width: 80%;
+        }
+
+        video {
+            width: 70%;
+            margin: 1em;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        .hr-line-left {
+            width: 60px;
+            border-bottom: 1px #acaca9 solid;
+            margin-top: 20px;
+            margin: 20px 0 20px 30px;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /***********************手機板**************************/
+        @media screen and (max-width: 700px) {
+            header a {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (min-width: 1400px) and (max-width: 1800px) {
+            .content1 {
+                height: 75em;
+            }
+
+            .content1-right {
+                text-align: center;
+            }
+
+            .content1-right img {
+                width: 40%;
+            }
+        }
+
+        @media screen and (min-width: 1000px) and (max-width: 1399px) {
+            .content1-right {
+                text-align: center;
+            }
+
+            .content1-right img {
+                width: 50%
+            }
+
+            .content3-right img {
+                width: 90%;
+            }
+
+            .content3-left iframe {
+                width: 70%;
+                height: 50%;
+            }
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 999px) {
+            .content1 {
+                height: 60em;
+            }
+
+            .content2 {
+                height: 25em;
+            }
+
+            .content2 iframe {
+                height: 80%;
+            }
+
+            .content3 {
+                height: 25em;
+            }
+
+            .content3-right img {
+                width: 90%;
+            }
+
+            .content3-left iframe {
+                width: 70%;
+                height: 50%;
+            }
+
+            .content1-left-in i {
+                font-size: 0.8em;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                line-height: 20px;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 700px) {
+            .content1 {
+                height: 60em;
+            }
+
+            .content1-right {
+                margin: 0;
+            }
+
+            .content1-left p {
+                margin: 0;
+            }
+
+            .content2 {
+                height: 15em;
+            }
+
+            .content2 iframe {
+                height: 90%;
+            }
+
+            .content3 {
+                height: 25em;
+            }
+
+            .content3-left {
+                width: 40%;
+
+            }
+
+            .content3-right img {
+                width: 90%;
+            }
+
+            .content3-left iframe {
+                width: 70%;
+                height: 50%;
+            }
+
+            .content1-left-in i {
+                font-size: 0.6em;
+                line-height: 10px;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                line-height: 20px;
+            }
+
+            h3 {
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            h4 {
+                font-size: 0.6em;
+            }
+
+            h5 {
+                line-height: 25px;
+            }
+        }
+
+        /*****************************************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+
+        <section class="content1">
+            <div class="content1-left">
+                <h1>THE BALVENIE</h1>
+                <h2>DOUBLEWOOD 12</h2>
+                <hr class="hr-line-left">
+                <p>百富雙桶12年單一麥芽威士忌</p>
+                <h3>百富DoubleWood雙桶12年單一麥芽威士忌的風味來自兩種酒桶中連續熟成。</h3>
+                <h4>為了製作百富DoubleWood雙桶威士忌，大衛史都華將在傳統美國橡木波本桶與豬頭桶內陳年至少12年的威士忌移至到西班牙Oloroso雪莉桶，再陳放9個月。
+                    <br />接著威士忌再被移至到大型融合桶陳放3-4個月，進行「融合」。
+                    <br />每個階段賦予百富單一麥芽威士忌不同的特質：傳統威士忌橡木桶給予其柔和口感和細緻特質，而雪莉桶則豐富其風味，增加深度，最後的「融合」過程則讓威士忌的風味更加和諧。
+                </h4>
+                <div class="content1-left-in">
+                    <p>品酒筆記</p>
+                    <hr class="hr-line-left">
+                    <h5>聞香&nbsp;&nbsp;<i>融合香甜水果、歐洛羅梭 (Oloroso) 雪莉酒的調性，與蜂蜜和香草味交互鋪陳。</i>
+                        <br />口感&nbsp;&nbsp;<i>滑順芳醇，呈現出堅果的甜美、肉桂的辛香，以及雪莉酒細緻的風味融合而成的美妙風味。</i>
+                        <br />餘韻&nbsp;&nbsp;<i>悠長而溫暖。</i>
+                    </h5>
+                </div>
+            </div>
+            <div class="content1-right">
+                <img class="content1-right-img" src="/static/images/our-whisky-range/page2-c1-p1.jpg" alt="">
+                <img src="/static/images/our-whisky-range/page2-c2-p1.jpg" alt="">
+                <img src="/static/images/our-whisky-range/page2-c3-p1.jpg" alt="">
+            </div>
+        </section>
+        <section class="content2">
+            <iframe width="1140" height="641" src="https://www.youtube.com/embed/-UGeLm2NJ3s" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+        <section class="content3">
+            <div class="content3-left">
+                <video src="/static/images/our-whisky-range/page2-c3-mp4.mp4" autoplay loop></video>
+                <iframe width="355" height="200" src="https://www.youtube.com/embed/LPcu6y1DGwQ" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="content3-right">
+                <img src="/static/images/our-whisky-range/page2-c3-p1.jpg" alt="">
+            </div>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕 <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+
+        </div>
+
+    </wrapper>
+
+</body>
+
+</html>

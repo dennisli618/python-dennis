@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>波登主廚的手工探索 | 百富單一麥芽威士忌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        header a:hover {
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 100%;
+            height: 30em;
+            margin: 8em 0 0 0;
+            background: url(/static/images/other-crafts/c1-p1.jpg) no-repeat center center;
+            background-size: contain;
+        }
+
+        .content1 h1 {
+            margin: 140px 0 0 0;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 43%;
+            left: 35%
+        }
+
+        .hr-line {
+            position: absolute;
+            top: 62%;
+            left: 44%;
+            width: 150px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 20px auto;
+        }
+
+        .content2 {
+            width: 65%;
+            margin: 0 auto;
+            display: flex;
+            margin-bottom: 2em;
+        }
+
+        .content2 img {
+            margin: 2em 4em 0 0;
+        }
+
+        .content2 p {
+            margin: 30px 40px 0 0;
+            font-size: 16px;
+            color: #595a54;
+            line-height: 26px;
+        }
+
+        .content3 {
+            width: 100%;
+            height: 45%;
+            background-color: #e0d8c3;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content3 p,
+        h3 {
+            margin: 10px 0;
+            color: #595a54;
+        }
+
+        .content3 h3 {
+            font-size: 26px;
+        }
+
+        .content3-top1,
+        .content3-top2,
+        .content3-top3 {
+            margin: 2em;
+        }
+
+        .content3-bottom1,
+        .content3-bottom2,
+        .content3-bottom3 {
+            margin: 2em;
+        }
+
+        .content3-top,
+        .content3-bottom {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        iframe {
+            width: 25em;
+            height: 15em;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /*******手機板***************************/
+        @media screen and (min-width: 1050px) and (max-width: 1400px) {
+
+            .content3-top1,
+            .content3-top2,
+            .content3-top3 {
+                margin: 1em;
+            }
+
+            .content3-bottom1,
+            .content3-bottom2,
+            .content3-bottom3 {
+                margin: 1em;
+            }
+
+            iframe {
+                width: 20em;
+                height: 15em;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 1049px) {
+
+            .content3-top1,
+            .content3-top2,
+            .content3-top3 {
+                margin: 0.5em;
+            }
+
+            .content3-bottom1,
+            .content3-bottom2,
+            .content3-bottom3 {
+                margin: 0.5em;
+            }
+
+            iframe {
+                width: 16em;
+                height: 15em;
+            }
+        }
+
+        @media screen and (min-width: 770px) and (max-width: 849px) {
+            iframe {
+                width: 13em;
+                height: 10em;
+            }
+        }
+
+        @media screen and (min-width: 630px) and (max-width: 769px) {
+            iframe {
+                width: 10em;
+                height: 8em;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 629px) {
+            iframe {
+                width: 8em;
+                height: 6em;
+            }
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 1200px) {
+            .content2 img {
+                margin: 5em 1em 0 0;
+                width: 50%;
+                height: 50%;
+            }
+
+            .content2 {
+                width: 85%;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 700px) {
+            .content2 {
+                width: 95%;
+            }
+
+            .content2 img {
+                margin: 5em 1em 0 0;
+                width: 50%;
+                height: 50%;
+
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 600px) {
+            header a {
+                padding: 0;
+            }
+
+            .content1 {
+                margin: 1em 0 0 0;
+                height: 24em;
+            }
+
+            .content2 {
+                width: 85%;
+            }
+
+            .content2 img {
+                margin: 10em 1em 0 0;
+                width: 50%;
+                height: 50%;
+            }
+
+            .content1 h1 {
+                margin: 0;
+                top: 25%;
+                left: 18%;
+            }
+
+            .hr-line {
+                margin: 0;
+                top: 32%;
+                left: 45%;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            .content3 h3 {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        /***************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <section class="content1">
+            <h1>RAW CRAFT WITH ANTHONY BOURDAIN</h1>
+            <hr class="hr-line">
+
+        </section>
+        <section class="content2">
+            <img src="/static/images/other-crafts/c2-p1.png" alt="">
+            <p>We teamed up with Anthony Bourdain to bring you Raw Craft, an inspiring behind the scenes look inside the
+                workshops
+                of some of the most talented, creative and hardworking craftspeople in America. In The Balvenie spirit,
+                Bourdain
+                will uncover the true meaning of craftsmanship. Each film showcases artisans guiding him through the
+                process
+                while providing unique insight into the dedication and sacrifice required to produce everyday items by
+                hand.
+                <br /><br />To watch the latest episodes, subscribe to rawcraft.us
+            </p>
+        </section>
+        <section class="content3">
+            <div class="content3-top">
+                <div class="content3-top1">
+                    <p>EPISODE 1</p>
+                    <h3>BOROUGH FURNACE</h3>
+                    <iframe src="https://www.youtube.com/embed/6ChPbdD3zDk?ecver=2" frameborder="0"
+                        allow="autoplay;"></iframe>
+                    <!-- <a href="#video-modal-1"><img src="images/other-crafts/c3-p1.jpg" alt=""></a> -->
+                </div>
+                <div class="content3-top2">
+                    <p>EPISODE 2</p>
+                    <h3>FRANK SHATTUCK</h3>
+                    <iframe src="https://www.youtube.com/embed/Jks5VHQ9Q0o" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!-- <a href=""><img src="images/other-crafts/c3-p2.jpg" alt=""></a> -->
+                </div>
+                <div class="content3-top3">
+                    <p>EPISODE 3</p>
+                    <h3>STEVE GOODSON</h3>
+                    <iframe src="https://www.youtube.com/embed/CWERXEBPntc" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!-- <a href=""></a><img src="images/other-crafts/c3-p3.jpg" alt=""> -->
+                </div>
+            </div>
+            <div class="content3-bottom">
+                <div class="content3-bottom1">
+                    <p>EPISODE 4</p>
+                    <h3>BOB KRAMER</h3>
+                    <iframe src="https://www.youtube.com/embed/4x0f2b_0kn0" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!-- <a href=""><img src="images/other-crafts/c3-p4.jpg" alt=""></a> -->
+                </div>
+                <div class="content3-bottom2">
+                    <p>EPISODE 5</p>
+                    <h3>ARION PRESS</h3>
+                    <iframe src="https://www.youtube.com/embed/i-5NhxYRqUI" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!-- <a href=""><img src="images/other-crafts/c3-p5.jpg" alt=""></a> -->
+                </div>
+                <div class="content3-bottom3">
+                    <p>EPISODE 6</p>
+                    <h3>DUFFTOWN</h3>
+                    <iframe src="https://www.youtube.com/embed/Ds9jgvhjiUY" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <!-- <a href=""><img src="images/other-crafts/c3-p6.jpg" alt=""></a> -->
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕
+                <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+
+        </div>
+
+    </wrapper>
+</body>
+
+</html>

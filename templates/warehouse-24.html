@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百富網站會員專區|訂閱新聞,活動及優惠電子報| 百富單一麥芽威士忌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 14em;
+
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+            text-decoration: none;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 100%;
+            height: 30em;
+            background: url(/static/images/warehouse-24/c1-p1.jpg) no-repeat center center;
+            background-size: contain;
+
+        }
+
+        .content1 h1 {
+            margin: 120px 0 10px 0;
+            color: #595a54;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            left: 55%;
+        }
+
+        .hr-line {
+            width: 100px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 0 auto;
+            position: absolute;
+            top: 37%;
+            left: 56.5%;
+        }
+
+        .content2 {
+            width: 80%;
+            height: 25em;
+            margin: 0 auto;
+        }
+
+        .content2 h1 {
+            color: #595a54;
+            text-align: center;
+            margin: 10px 0 10px 0;
+        }
+
+        .content2-in {
+            display: flex;
+            justify-content: center;
+        }
+
+        .content2 p,
+        ul {
+            margin: 10px;
+        }
+
+        .content2 p {
+            line-height: 1.6em;
+        }
+
+        .content2 li {
+            margin: 1em 2em;
+            line-height: 2em;
+        }
+
+        .content2-left {
+            width: 50%;
+        }
+
+        .content3 {
+            width: 100%;
+            height: 20em;
+            background: url(/static/images/warehouse-24/c3-p1.jpg) no-repeat center center;
+            background-size: contain;
+        }
+
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /**********************手機板************************/
+        @media screen and (max-width: 700px) {
+            header a {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .content2 p {
+                line-height: 1.2em;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 700px) {
+            .content3 {
+                height: 20em;
+            }
+
+            .content1 h1 {
+                top: 15%;
+            }
+
+            .hr-line {
+                top: 33%;
+                left: 58.5%;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 599px) {
+            .content1 {
+                height: 25em;
+            }
+
+            .content1 h1 {
+                top: 10%;
+            }
+
+            .hr-line {
+                top: 28%;
+                left: 58.5%;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        /*****************************************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <section class="content1">
+            <h1>百富24號酒窖</h1>
+            <hr class="hr-line">
+        </section>
+        <section class="content2">
+            <h1>免費註冊</h1>
+            <hr class="hr-line">
+            <div class="content2-in">
+                <p class="content2-left">百富私藏酒窖 (Warehouse 24) 之名得自酒廠現存最古老的第 24 號酒窖，
+                    這是為有意深入了解百富及威士忌製作工藝的單一麥芽威士忌愛好者而設的專屬區域。
+                    <br /><br />歡迎您加入成為單一麥芽威士忌愛好者之一。
+                </p>
+                <ul>
+                    免費加入百富私藏酒窖，您就可以：
+                    <li>透過電子郵件取得參與專屬活動的權利</li>
+                    <li>率先取得百富酒廠的最新消息，並提早得知新品上市的訊息</li>
+                    <li>聆聽首席調酒師和工匠對釀製威士忌的看法</li>
+                    當您親自蒞臨拜訪酒廠時，可於百富私藏酒窖內品嚐會員限定桶的珍貴威士忌
+                </ul>
+            </div>
+        </section>
+        <section class="content3">
+
+        </section>
+        <section class="content4">
+
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕 <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+
+        </div>
+    </wrapper>
+</body>
+
+</html>

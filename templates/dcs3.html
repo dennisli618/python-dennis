@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百富首席調酒師典藏系列第三章 酒窖管理的秘密</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 30em;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 100%;
+            height: 35em;
+            background: url(/static/images/dcs3/c1-p1.jpg) no-repeat center 100%;
+            background-size: contain;
+            margin-top: 11em;
+        }
+
+        .content1 h1 {
+
+            color: #ffffff;
+            position: absolute;
+            top: 62%;
+            left: 38%;
+        }
+
+        .hr-line {
+            width: 10%;
+            border-bottom: 1px #ffffff solid;
+            margin: 0 auto;
+            position: absolute;
+            top: 67%;
+            left: 47%;
+        }
+
+        .content2 {
+            width: 85%;
+            height: 30em;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .content2-img {
+            position: relative;
+            top: -10%;
+            border: 5px #fff solid;
+        }
+
+        .content2-right h1,
+        h3,
+        p {
+            margin: 2em;
+            color: #595a54;
+        }
+
+        .content2-right2 {
+            margin: 30px;
+            border-left: 2px#595a54 solid;
+        }
+
+        .content3 {
+            width: 100%;
+            height: 50em;
+            text-align: center;
+            background-color: #e0d8c3;
+        }
+
+        .content3 h1 {
+            text-align: center;
+            color: #595a54;
+            padding: 2em 0;
+        }
+
+        .content3 iframe {
+            width: 40%;
+            height: 60%;
+        }
+
+        .content5 iframe {
+            width: 40%;
+            height: 85%;
+        }
+
+        .content3 h2,
+        p {
+            margin: 20px 0;
+            text-align: center;
+            color: #595a54;
+        }
+
+        .content4 {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 2em 0;
+        }
+
+        .content4-left {
+            width: 36%;
+            height: auto;
+
+        }
+
+        .content4-right {
+            width: 35em;
+
+        }
+
+        .content4-right-top {
+            margin: 0 0 0.5em 0;
+            width: 82%;
+        }
+
+        .content4-right-small {
+            margin: 1em;
+            width: 38%;
+        }
+
+        .content4-right-small2 {
+            margin: 1em;
+            width: 38%;
+        }
+
+        .content5 {
+            text-align: center;
+            height: 35em;
+        }
+
+        .content5 h1 {
+            margin: 20px 0;
+            color: #595a54;
+        }
+
+
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /**********************手機板************************/
+        @media screen and (max-width: 700px) {
+            header a {
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width:1000px) and (max-width: 1499px) {
+            .content1 {
+                margin: 0;
+            }
+
+            .content1 h1 {
+                top: 36%;
+            }
+
+            .hr-line {
+                top: 42%;
+                left: 53%;
+            }
+        }
+
+        @media screen and (min-width:800px) and (max-width: 1199px) {
+            iframe {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width:500px) and (max-width: 999px) {
+            .content1 {
+                margin: 0;
+                height: 28em;
+            }
+
+            .content1 h1 {
+                top: 36%;
+
+            }
+
+            .hr-line {
+                top: 42%;
+                left: 53%;
+            }
+
+            iframe {
+                width: 55%;
+                height: 50%;
+            }
+
+            .content3 {
+                height: 35em;
+            }
+
+            .content5 {
+                height: 25em;
+            }
+
+            .content2-right h1,
+            h3,
+            p {
+                margin: 3em 1em;
+                font-size: 1em;
+            }
+
+        }
+
+        @media screen and (min-width:700px) and (max-width: 900px) {
+            .content1 {
+                height: 25em;
+            }
+
+            .content1 h1 {
+                top: 26%;
+                left: 23%;
+            }
+
+            .hr-line {
+                top: 31%;
+                left: 41%;
+                width: 25%;
+            }
+        }
+
+        @media screen and (min-width:400px) and (max-width: 699px) {
+            .content1 {
+                height: 21em;
+            }
+
+            .content1 h1 {
+                top: 30%;
+                left: 23%;
+                font-size: 1.2em
+            }
+
+            .hr-line {
+                top: 35%;
+                left: 41%;
+                width: 25%;
+            }
+        }
+
+        @media screen and (min-width:600px) and (max-width: 849px) {
+
+            .content2-right h1,
+            h3,
+            p {
+                font-size: 0.8em;
+            }
+
+            .content2-right h3 {
+                margin: 3.5em 0 0 1em;
+            }
+
+            .content2-right h1,
+            p {
+                margin: 1em;
+            }
+
+            .content2-img {
+                height: 55%;
+                top: 6%;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width: 799px) {
+            .content3 iframe {
+                width: 70%;
+                height: 40%;
+            }
+
+            .content5 iframe {
+                width: 70%;
+                height: 55%;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width: 599px) {
+            .content1 {
+                height: 17em;
+            }
+
+            .content1 h1 {
+                top: 20%;
+                left: 13%;
+                font-size: 1em;
+                ;
+            }
+
+            .hr-line {
+                top: 26%;
+                left: 25%;
+                width: 50%;
+            }
+
+            .content2-right h1,
+            h3,
+            p {
+                font-size: 0.3em;
+            }
+
+            .content2-right h3 {
+                margin: 3.5em 0 0 1em;
+            }
+
+            .content2-right h1,
+            p {
+                margin: 1em;
+            }
+
+            .content2-img {
+                height: 46%;
+                top: 21%;
+            }
+
+            .content4-left {
+                width: 70%;
+            }
+
+            .content4-right-small {
+                margin: 0;
+                width: 82%;
+            }
+
+            .content4-right-small2 {
+                margin: 0.5em 0;
+                width: 84%;
+            }
+
+            iframe {
+                width: 75%;
+            }
+        }
+
+        @media screen and (min-width:850px) and (max-width: 1199px) {
+            .content2-img {
+                top: 8%;
+                height: 70%;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        /*********************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <section class="content1">
+            <h1>百富首席調酒師典藏系列第三章 酒窖管理的秘密</h1>
+            <hr class="hr-line">
+        </section>
+        <section class="content2">
+            <img class="content2-img" src="/static/images/dcs3/c2-p1.jpg" alt="">
+            <div class="content2-right">
+                <h3>熟成威士忌本身即是一項複雜工藝，是一場時間及天性的戰略遊戲，
+                    需要幾千個不可重複的決定。了解哪個木桶已可以裝瓶，那些要留下繼續陳放？
+                    這一個木桶能夠為桶內威士忌帶來怎麼樣的風味？哪個木桶可得以保存？
+                    同時哪個木桶會以「天使的分享」的形式蒸發？這一場遊戲，
+                    可能需要幾十年的時間來了解每一個步驟所帶來的結果。有哪一個產業會花幾世紀的時間來管理他們的存貨？
+                </h3>
+                <div class="content2-right2">
+                    <p>DAVID C. STEWART (MBE)</p>
+                    <h1>威士忌酒熟成，像是一場需要花幾十年時間玩的戰略遊戲</h1>
+                </div>
+            </div>
+        </section>
+        <section class="content3">
+            <h1>威士忌熟成的策略遊戲</h1>
+            <iframe width="920" height="518" src="https://www.youtube.com/embed/89FSKf-DS9U" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h2>耐性的遊戲</h2>
+            <p>沒有幾個遊戲能夠像熟成威士忌需要那麼久的時間。
+                想像一下，遊戲中走的每一步可能長達數十年，針對50年後才會揭露的風味做出決定。
+            </p>
+        </section>
+        <section class="content4">
+            <img class="content4-left" src="/static/images/dcs3/c4-p1.jpg" alt="">
+
+            <div class="content4-right">
+                <img class="content4-right-top" src="/static/images/dcs3/c4-p2.jpg" alt="">
+                <img class="content4-right-small" src="/static/images/dcs3/c4-p3.jpg" alt="">
+                <img class="content4-right-small2" src="/static/images/dcs3/c4-p4.jpg" alt="">
+            </div>
+        </section>
+        <section class="content5">
+            <h1>酒窖管理的秘密</h1>
+            <iframe width="1140" height="641" src="https://www.youtube.com/embed/rcQF8yyKdyk?ecver=2" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕 <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+        </div>
+    </wrapper>
+</body>
+
+</html>

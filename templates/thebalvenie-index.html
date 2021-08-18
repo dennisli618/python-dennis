@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>斯貝賽地區手工釀造的單一麥芽蘇格蘭威士忌 | 百富單一麥芽威士忌</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 100%;
+            height: 600px;
+
+        }
+
+        .content2 {
+            width: 100%;
+            height: 400px;
+            background: url(images/balvenie-Chapter-1.jpg) no-repeat center center;
+            display: flex;
+
+
+        }
+
+        .content2-inside {
+            width: 700px;
+            height: 230px;
+            background-color: rgba(247, 246, 243, .9);
+            margin: 25% auto;
+        }
+
+        h1 {
+            font-family: "Plantin W01";
+            text-align: center;
+            margin: 30px 0;
+            color: #595a54;
+        }
+
+        p {
+            color: #595a54;
+            text-align: left;
+            margin: 30px;
+
+        }
+
+        .content2 a {
+            margin: 0 40%;
+            background-color: #a89276;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .content2 a:hover {
+            background-color: #a7763b;
+        }
+
+        .content3 {
+            width: 100%;
+            height: 800px;
+            background: url(/static/images/balvenie-Chapter-2.jpg) no-repeat center center;
+            display: flex;
+        }
+
+        .content3-inside {
+            width: 350px;
+            height: 380px;
+            background-color: rgba(247, 246, 243, .9);
+            margin: 20em auto;
+            position: relative;
+            right: -20%;
+            padding: 1em;
+
+        }
+
+        .content3-inside h1 {
+            margin: 0 0 10px 0;
+
+            text-align: left;
+        }
+
+        .content3-inside h2 {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 20px;
+            color: #595a54;
+        }
+
+        .content3-inside h3 {
+            font-family: "Plantin W01";
+            font-size: 16px;
+            color: #595a54;
+            margin: 0 0 20px 0;
+            line-height: 26px;
+        }
+
+        .content3-inside h4 {
+            font-family: "Plantin W01";
+            font-size: 16px;
+            color: #595a54;
+            margin: 0 0 30px 0;
+            border-left: 1px solid #acaca9;
+            padding: 10px;
+            line-height: 26px;
+        }
+
+        .content3-inside p {
+            font-size: 16px;
+            text-align: left;
+            margin: 0 0 20px 0;
+
+        }
+
+        .content3-inside span {
+            font-size: 14px;
+            color: #acaca9;
+            margin: 5px;
+        }
+
+        .content3 a {
+            background-color: #a89276;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .content3 a:hover {
+            background-color: #a7763b;
+        }
+
+        .content4 {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2em;
+            margin: 0 auto;
+        }
+
+        .content4 .div1 {
+            width: 25%;
+            height: 50%;
+            text-align: center;
+
+
+        }
+
+        .div1 img {
+            margin: 1em;
+            width: 20vh;
+        }
+
+        .div2 img {
+            margin: 2em;
+            width: 56vh;
+        }
+
+        .content4 .div3 {
+            width: 25%;
+            height: 50%;
+            text-align: center;
+        }
+
+        .div3 img {
+            margin: 1em;
+            width: 26vh;
+        }
+
+        .div4 img {
+            margin: 2em;
+            width: 56vh;
+        }
+
+
+
+        .content5 {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2em;
+            margin: 0 auto;
+        }
+
+        .content5 .div5 {
+            width: 25%;
+            height: 50%;
+            text-align: center;
+            margin: 1em;
+        }
+
+        .div5 img {
+            margin: 1em;
+            width: 26vh;
+
+        }
+
+        .div6 img {
+            margin: 2em;
+            width: 56vh;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        video {
+            right: 0;
+            width: 100%;
+            display: block;
+        }
+
+        .hr-line {
+            width: 100px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 20px auto;
+        }
+
+        .hr-line-left {
+            width: 60px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 0 0 20px 0;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+
+        /*
+            RWD 手機板
+            */
+
+        @media screen and (min-width:1861px) and (max-width:2000px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 16vh;
+                margin: 1.4em 1.8em;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 40vh;
+            }
+        }
+
+        @media screen and (min-width:1798px) and (max-width:1860px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 18vh;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 40vh;
+            }
+        }
+
+        @media screen and (min-width:1470px) and (max-width:1797px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 14vh;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 37vh;
+            }
+        }
+
+        @media screen and (min-width:1305px) and (max-width:1469px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 12vh;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 32vh;
+            }
+        }
+
+        @media screen and (min-width:1141px) and (max-width:1304px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 10vh;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 30vh;
+            }
+        }
+
+        @media screen and (min-width:1000px) and (max-width:1140px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 8vh;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 24vh;
+            }
+        }
+
+        @media screen and (min-width:921px) and (max-width:999px) {
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: 17vh;
+            }
+
+            .div2 img {
+                width: 57vh;
+            }
+
+            .div4 img,
+            .div6 img {
+                width: 37vh;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width:999px) {
+            .content4 {
+                display: block;
+            }
+
+            .div1 img,
+            .div3 img,
+            .div5 img {
+                width: auto;
+            }
+
+            .div4 img,
+            .div6 img {
+                width: 56vh;
+            }
+
+            .content4 .div2,
+            .content5 .div4,
+            .content5 .div6 {
+                text-align: center;
+            }
+
+            .content4 .div1,
+            .content4 .div3 {
+                width: auto;
+            }
+
+            .content5 {
+                display: block;
+            }
+
+            .content5 .div5 {
+                width: auto;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width:900px) {
+            video {
+                margin: 7em 0;
+            }
+
+            .content1 {
+                height: 20em;
+            }
+
+            .content3-inside {
+                right: 0;
+            }
+
+            .div2 img,
+            .div4 img,
+            .div6 img {
+                width: 40vh;
+            }
+
+            .content4,
+            .content5 {
+                padding: 0 1em;
+            }
+
+            .content2 a {
+                padding: 0.3em 1em;
+            }
+        }
+
+        /*head*************************************************************/
+        @media screen and (max-width:1369px) {
+            header a {
+                margin: 0.6em;
+            }
+        }
+
+        @media screen and (max-width:1287px) {
+            header a {
+                margin: 0.4em;
+                font-size: 0.6em;
+                text-align: right;
+
+            }
+
+            .logo {
+                width: 50%;
+
+            }
+        }
+
+        @media screen and (max-width:1110px) {
+            header a {
+                font-size: 0.4em;
+            }
+        }
+
+        @media screen and (max-width:1017px) {
+            header a {
+                font-size: 0.3em;
+            }
+        }
+
+        @media screen and (max-width:970px) {
+            header a {
+                font-size: 0.25em;
+            }
+        }
+
+        @media screen and (max-width:947px) {
+            header a {
+                font-size: 0.2em;
+            }
+
+            .logo {
+                margin: 0;
+            }
+        }
+
+        /*************************************************************************/
+
+        @media screen and (max-width:1108px) {
+            .copyright {
+                font-size: 1.6em;
+            }
+        }
+
+        @media screen and (max-width:1021px) {
+            .copyright {
+                font-size: 1.4em;
+            }
+        }
+
+        @media screen and (max-width:964px) {
+            .copyright {
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (max-width:920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        /*****************************************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <!-- <img class="logo" src="images/balvenie-logo.svg" alt=""> -->
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+
+        <section class="content1">
+            <video preload controls autoplay="autoplay" muted="true">
+                <!--------------首頁影片自動撥放 CHOME優化使用者體驗 靜音才能自動撥放------------------>
+                <source src="welcome-to-the-balvenie-distillery.ogg" type="video/ogg">
+                <source src="{{ url_for('static', filename='images/welcome-to-the-balvenie-distillery.mp4') }}"
+                    type="video/mp4"> 您的瀏覽器不支援此 HTML5 影片標籤
+            </video>
+        </section>
+        <section class="content2">
+            <div class="content2-inside">
+                <h1>百富首席調酒師典藏系列珍稀原酒</h1>
+                <hr class="hr-line">
+                <p>由首席調酒師大衛史都華嚴選的珍稀單桶威士忌系列。典藏系列分成五個章節，詮釋了大衛超過半世紀的威士忌豐富經驗及貢獻。</p>
+                <a href="our-whisky-range">了解更多</a>
+            </div>
+        </section>
+        <section class="content3">
+            <div class="content3-inside">
+                <h2>THE BALVENIE</h2>
+                <h1>12 年 DOUBLEWOOD</h1>
+                <hr class="hr-line-left">
+                <p>百富雙桶12年單一麥芽威士忌</p>
+                <h3>百富 12 年 DoubleWood 單一麥芽威士忌的獨特酒性來自兩種不同木桶的熟成：先是傳統的橡木威士忌桶，然後是首次裝桶的歐洲雪莉桶。</h3>
+                <h4>
+                    <span>品酒筆記</span>
+                    <i>融合香甜水果、歐洛羅梭 (Oloroso) 雪莉酒的調性，與蜂蜜和香草味交互鋪陳。</i>
+                </h4>
+                <a href="our-whisky-range-2">了解更多</a>
+            </div>
+        </section>
+        <section class="content4">
+            <div class="div1" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='images/c4-d1p1.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d1p2.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d1p3.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d1p4.jpg') }}" alt="">
+            </div>
+            <div class="div2" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='images/c4-d2.jpg') }}" alt="">
+            </div>
+            <div class="div3" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='images/c4-d3p1.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d3p2.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d3p3.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d3p4.jpg') }}" alt="">
+            </div>
+        </section>
+        <section class="content5">
+            <div class="div4" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='images/c4-d4.jpg') }}" alt="">
+            </div>
+            <div class="div5" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='images/c4-d5p1.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d5p2.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d5p3.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/c4-d5p4.jpg') }}" alt="">
+            </div>
+            <div class="div6" data-aos="flip-left">
+                <img src="{{ url_for('static', filename='images/c4-d6.jpg') }}" alt="">
+            </div>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕
+                <img src="{{ url_for('static', filename='images/drive-icon.png') }}" alt="">酒後不開車 安全有保障</b>
+
+        </div>
+    </wrapper>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        src = "https://code.jquery.com/jquery-3.6.0.js"
+        integrity = "sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin = "anonymous" >
+    </script>
+
+    <script>
+            AOS.init({
+                easing: 'ease-in-out-sine',
+                duration: 800,
+                delay: 200,
+            })
+
+
+    </script>
+
+</body>
+
+</html>

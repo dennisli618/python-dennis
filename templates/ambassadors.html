@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meet Our Whisky Ambassadors | The Balvenie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 10em;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .content1 {
+            width: 50%;
+            height: 15em;
+            margin: 0 auto;
+            color: #595a54;
+        }
+
+        .content1 h1 {
+            text-align: center;
+            margin: 7em 0 2em 0;
+        }
+
+        .content1 p {
+            text-align: left;
+            letter-spacing: 0.2em;
+            line-height: 2em;
+            text-decoration: none;
+        }
+
+        .content2 {
+            width: 100%;
+            height: 50em;
+            background: url(/static/images/ambassadors/c2-p1.jpg) no-repeat center center;
+            background-size: contain;
+        }
+
+        .content2 h1 {
+            position: absolute;
+            top: 90%;
+            left: 60%;
+            text-align: center;
+            color: #595a54;
+        }
+
+        .hr-line {
+            width: 100px;
+            border-bottom: 1px #acaca9 solid;
+            margin: 20px auto;
+            position: absolute;
+            top: 93%;
+            left: 61.5%;
+        }
+
+        .content3 {
+            width: 85%;
+            height: 25em;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .content3-img {
+            height: 30em;
+            position: relative;
+            top: -40%;
+            border: 5px #fff solid;
+            margin: 0 3em 0 0;
+        }
+
+        .content3 h3 {
+            color: #595a54;
+            margin: 2em 0;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /********************手機板*************************/
+        @media screen and (min-width: 1300px) and (max-width: 1600px) {
+            .content3-img {
+                top: -13em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) and (max-width: 1300px) {
+            .content3-img {
+                height: 25em;
+                top: -15em;
+            }
+
+            .content2 {
+                height: 40em;
+            }
+
+            .content3 {
+                height: 15em;
+            }
+        }
+
+        @media screen and (min-width: 1000px) and (max-width: 1200px) {
+            .content3 h3 {
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1000px) {
+            .content1 {
+                height: 22em;
+            }
+
+            .content2 h1 {
+                top: 80%;
+            }
+
+            .hr-line {
+                top: 83%;
+                left: 63%;
+            }
+
+            .content2 {
+                height: 25em;
+            }
+
+            .content3 {
+                height: 20em;
+            }
+
+            .content3-img {
+                top: -4em;
+                height: 20em;
+            }
+
+            .content3 h3 {
+                margin: 0;
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .content2 h1 {
+                top: 80%;
+            }
+
+            .hr-line {
+                top: 83%;
+                left: 64%;
+            }
+        }
+
+        @media screen and (min-width: 350px) and (max-width: 799px) {
+            .content3 h3 {
+                margin: 0;
+                font-size: 0.9em;
+            }
+
+            .content1 {
+                height: 22em;
+            }
+
+            .content2 {
+                height: 25em;
+            }
+
+            .content3 {
+                height: 15em;
+            }
+
+            .content3-img {
+                top: -4em;
+                height: 15em;
+            }
+        }
+
+        @media screen and (min-width: 350px) and (max-width: 649px) {
+            .content1 {
+                height: 20em;
+            }
+
+            .content2 {
+                height: 18em;
+            }
+
+            .content2 h1 {
+                top: 70%;
+            }
+
+            .hr-line {
+                top: 73%;
+                left: 64.5%;
+            }
+
+            .content3-img {
+                height: 10em;
+                top: -1em;
+            }
+
+            .content1 p {
+                font-size: 0.8em;
+            }
+
+        }
+
+        @media screen and (min-width: 350px) and (max-width: 549px) {
+            .content3 h3 {
+                font-size: 0.7em;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            header a {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        /********************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <section class="content1">
+            <h1>AMBASSADORS</h1>
+            <hr class="hr-line">
+            <p>全球各地的百富威士忌愛好者都希望來拜訪我們的酒廠，但對許多人而言，
+                這是難以達成的願望。對數以百萬計的百富威士忌愛好者而言，
+                百富品牌大使就是他們與酒廠之間的重要連結。
+                我們的品牌大使對威士忌瞭若指掌，尤其是百富威士忌，每位品牌大使都有自己獨一無二的特色。
+                您可以透過您最喜愛的活動或社群媒體找到他們，點選這裡以深入了解他們。</p>
+            <hr class="hr-line">
+        </section>
+        <section class="content2">
+            <h1>DANIEL SHEN</h1>
+            <hr class="hr-line">
+        </section>
+        <section class="content3">
+            <img class="content3-img" src="/static/images/ambassadors/c3-p1.jpg" alt="">
+            <div class="content3-right">
+                <h3>Joining William Grant and Sons Taiwan in 2009,
+                    Daniel is the first appointed Balvenie Ambassador in Taiwan and in Asia.
+                    Through his role working in the global top 5 Scotch whisky market,
+                    he ensures he educates people about single malt,
+                    preaches the gospel of Uisge Beatha with passion,
+                    but also makes sure he has fun with everyone he meets.
+                </h3>
+            </div>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕 <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+        </div>
+    </wrapper>
+</body>
+
+</html>

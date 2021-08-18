@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>我們獨特的五大工藝 | 百富單一麥芽威士忌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 3100px;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        header a:hover {
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        h3,
+        h4 {
+            font-size: 1.25em;
+        }
+
+        .content1 {
+            width: 80%;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        .content1 h1 {
+            text-align: center;
+            margin: 5em 0 0 0;
+            color: #595a54;
+        }
+
+        .content1 h2 {
+            text-align: center;
+            color: #595a54;
+        }
+
+        span {
+            width: 20px;
+            height: 20px;
+            border-bottom: 2px #595a54 solid;
+        }
+
+        .content2 {
+            width: 100%;
+            height: 400px;
+            margin: 3em auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content2 img {
+            margin: 2em 5em;
+            opacity: .7;
+        }
+
+        .content2 img:hover {
+            opacity: 1;
+        }
+
+        .content2 a {
+            color: #595a54;
+            text-decoration: none;
+        }
+
+        #content3 {
+            width: 100%;
+            height: 15%;
+            margin: 0 auto;
+            background: url(/static/images/our-five-rare-crafts/c3.jpg) no-repeat center center;
+        }
+
+        .content3-inside {
+            height: 100%;
+            padding-left: 50px;
+            color: #f7f6f3;
+        }
+
+        .content3-inside h3 {
+            padding: 12% 0 0 21.7%;
+        }
+
+        .content3-inside h4 {
+            padding: 0 0 1% 21.7%;
+        }
+
+        .content3-inside a {
+            margin: 0 21.5%;
+            padding: 10px 15px;
+            color: #f7f6f3;
+            background-color: #aa9172;
+            text-decoration: none;
+        }
+
+        #content4 {
+            width: 100%;
+            height: 15%;
+            margin: 20px auto;
+            background: url(/static/images/our-five-rare-crafts/c4.jpg) no-repeat center center;
+        }
+
+        .content4-inside {
+            padding-left: 50px;
+            color: #f7f6f3;
+        }
+
+        .content4-inside h3 {
+            padding: 12% 0 0 21.7%;
+        }
+
+        .content4-inside h4 {
+            padding: 0 0 1% 21.7%;
+        }
+
+        .content4-inside a {
+            margin: 0 21.5%;
+            padding: 10px 15px;
+            color: #f7f6f3;
+            background-color: #aa9172;
+            text-decoration: none;
+        }
+
+        #content5 {
+            width: 100%;
+            height: 15%;
+            margin: 20px auto;
+            background: url(/static/images/our-five-rare-crafts/c5.jpg) no-repeat center center;
+
+        }
+
+        .content5-inside {
+            padding-left: 50px;
+            color: #f7f6f3;
+        }
+
+        .content5-inside h3 {
+            padding: 12% 0 0 21.7%;
+        }
+
+        .content5-inside h4 {
+            padding: 0 0 1% 21.7%;
+        }
+
+        .content5-inside a {
+            margin: 0 21.5%;
+            padding: 10px 15px;
+            color: #f7f6f3;
+            background-color: #aa9172;
+            text-decoration: none;
+        }
+
+        #content6 {
+            width: 100%;
+            height: 15%;
+            margin: 20px auto;
+            background: url(/static/images/our-five-rare-crafts/c6.jpg) no-repeat center center;
+
+        }
+
+        .content6-inside {
+            padding-left: 50px;
+            color: #f7f6f3;
+        }
+
+        .content6-inside h3 {
+            padding: 12% 0 0 21.7%;
+        }
+
+        .content6-inside h4 {
+            padding: 0 0 1% 21.7%;
+        }
+
+        .content6-inside a {
+            margin: 0 21.5%;
+            padding: 10px 15px;
+            color: #f7f6f3;
+            background-color: #aa9172;
+            text-decoration: none;
+        }
+
+        #content7 {
+            width: 100%;
+            height: 15%;
+            margin: 20px auto;
+            background: url(/static/images/our-five-rare-crafts/c7.jpg) no-repeat center center;
+
+        }
+
+        .content7-inside {
+            padding-left: 50px;
+            color: #f7f6f3;
+        }
+
+        .content7-inside h3 {
+            padding: 12% 0 0 21.7%;
+        }
+
+        .content7-inside h4 {
+            padding: 0 0 1% 21.7%;
+        }
+
+        .content7-inside a {
+            margin: 0 21.5%;
+            padding: 10px 15px;
+            color: #f7f6f3;
+            background-color: #aa9172;
+            text-decoration: none;
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        b {
+            margin-left: 30px;
+        }
+
+        .menu2 {
+            width: 100%;
+            height: 250px;
+            background-color: #fff;
+            margin: 150px 0 0 0;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .menu2 img {
+            margin: 0 5em;
+        }
+
+        .menu2 a {
+            text-decoration: none;
+            color: #595a54;
+            line-height: 26px;
+        }
+
+        .menu2 img:hover {
+            border: 3px #aa9172 solid;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /*手機板***************************************************************************/
+        @media screen and (min-width:1206px) and (max-width:1400px) {
+            .menu2 img {
+                margin: 0 3em;
+            }
+        }
+
+        @media screen and (min-width:1420px) and (max-width:1570px) {
+            .content2 img {
+                margin: 1em 4em;
+            }
+        }
+
+        @media screen and (min-width:1251px) and (max-width:1540px) {
+            .content2 img {
+                margin: 1em 3em;
+            }
+
+            h3,
+            h4 {
+                font-size: 1.15em;
+            }
+        }
+
+        @media screen and (min-width:1092px) and (max-width:1250px) {
+            .content2 img {
+                margin: 1em 2em;
+            }
+
+            .menu2 img {
+                margin: 0 1em;
+            }
+        }
+
+        @media screen and (min-width:656px) and (max-width:1091px) {
+            .content2 img {
+                margin: 1em 2em;
+            }
+
+            h3,
+            h4 {
+                padding: 12% 0 0 10%;
+            }
+
+            .menu2 img {
+                margin: 0 0.5em;
+                width: 80%;
+            }
+
+            .content2 img {
+                width: 50%;
+                margin: 5em 2em;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .logo {
+                width: 120%;
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width:500px) and (max-width:600px) {
+            header a {
+                margin: 2%
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width:699px) {
+            .menu2 img {
+                margin: 0 0.2em;
+                width: 80%;
+            }
+
+            .content2 img {
+                margin: 7em 1em;
+                width: 60%;
+            }
+
+            .content3-inside h3,
+            .content4-inside h3,
+            .content5-inside h3,
+            .content6-inside h3,
+            .content7-inside h3 {
+                padding: 50% 0 0 5%;
+            }
+
+            .content3-inside h4,
+            .content4-inside h4,
+            .content5-inside h4,
+            .content6-inside h4,
+            .content7-inside h4 {
+                padding: 0 0 0 5%;
+                margin: 0 0 2% 0;
+            }
+
+            .content3-inside a,
+            .content4-inside a,
+            .content5-inside a,
+            .content6-inside a,
+            .content7-inside a {
+                margin: 0 5%;
+            }
+
+        }
+
+        @media screen and (min-width:300px) and (max-width:1000px) {
+            .content1 h1 {
+                margin: 2em 0 0 0;
+            }
+
+            .menu2 a {
+                height: 50%;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width:700px) {
+            .content2 {
+                margin: 5em 0 0 0;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .copyright {
+                font-size: 1em;
+            }
+        }
+
+        /*****************************************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <div class="menu2">
+            <a href="our-five-rare-crafts">
+                <div class="menu2-1"><img src="/static/images/menu2/pic1.jpg"
+                        alt=""><br />我們獨特的五大工藝<br />打造出不同凡響的百富單一麥芽威士忌
+                </div>
+            </a>
+            <a href="our-craftsmen">
+                <div class="menu2-2"><img src="/static/images/menu2/pic2.jpg" alt=""><br />我們的工匠<br />守護威士忌百年手工技藝的酒廠靈魂人物
+                </div>
+            </a>
+            <a href="the-distillery-story">
+                <div class="menu2-3"><img src="/static/images/menu2/pic3.jpg" alt=""><br />我們的故事<br />百富酒廠歷史大事記</div>
+            </a>
+            <!-- <a href=""><div class="menu2-4"><img src="images/menu2/pic4.jpg" alt="">參觀酒廠<br/>安排參訪百富酒廠</div></a> -->
+        </div>
+        <div>
+            {% for key in datas %}
+            {{key}}:{{datas[key]}}
+            {% endfor %}
+        </div>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕 <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+        </div>
+    </wrapper>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        })
+    </script>
+</body>
+
+</html>

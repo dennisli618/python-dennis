@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>百富威士忌酒廠歷史</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 7400px;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            border-bottom: 2px #aa9172 solid;
+            z-index: 5;
+
+        }
+
+        .logo {
+            width: 70%;
+            margin: 0 30%;
+
+        }
+
+        header a {
+            margin: 15px;
+            text-decoration: none;
+            color: #aa9172;
+            font-size: 12px;
+            padding: 10px;
+
+        }
+
+        header a:hover {
+            border-bottom: 1px #aa9172 solid;
+        }
+
+        .menu2 {
+            width: 100%;
+            height: 250px;
+            background-color: #fff;
+            margin: 150px 0 0 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu2 img {
+            margin: 0 5em;
+            width: 70%;
+        }
+
+        .menu2 a {
+            text-decoration: none;
+            color: #595a54;
+            line-height: 26px;
+        }
+
+        .content1 {
+            width: 100%;
+            height: 50em;
+        }
+
+        .content1 h1 {
+            text-align: center;
+            color: #595a54;
+            margin: 40px;
+        }
+
+        .content1 video {
+            width: 100%;
+            object-fit: cover;
+            height: 70%;
+        }
+
+        .content2 {
+            width: 80%;
+            height: 15em;
+            margin: 0 auto;
+        }
+
+        .content2 h1 {
+            text-align: center;
+            margin: 20px;
+            color: #595a54;
+        }
+
+        .content2 h3 {
+            color: #595a54;
+            margin-bottom: 40px;
+        }
+
+        .content2 a {
+            padding: 15px;
+            color: #595a54;
+            text-decoration: none;
+        }
+
+        .content2 a:hover {
+            border-bottom: 2px #aa9172 solid;
+        }
+
+        .link-a {
+            text-align: center;
+        }
+
+        h1,
+        h3 {
+            color: #595a54;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        #year-1892 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1892.jpg)no-repeat center center;
+            padding-top: 15em;
+        }
+
+        .in-1892 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1893 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1893.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1893 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1923 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1923.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1923 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1929 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1929.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1929 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1962 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1962.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1962 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1971 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1971.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1971 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 20%;
+        }
+
+        #year-1974 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1974.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1974 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1983 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1983.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1983 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1987 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1987.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1987 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-1993 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/1993.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-1993 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-2004 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/2004.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-2004 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-2010 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/2010.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-2010 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-2014 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/2014.jpg)no-repeat center center;
+            padding-top: 230px;
+            margin-top: -150px;
+        }
+
+        .in-2014 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+        #year-2015 {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            display: flex;
+            background: url(/static/images/the-distillery-story/2015.jpg)no-repeat center center;
+            padding-top: 200px;
+            margin-top: -150px;
+        }
+
+        .in-2015 {
+            width: 350px;
+            height: 150px;
+            background: rgba(247, 246, 243, .9);
+            padding: 10px 15px;
+            margin: 0 auto;
+        }
+
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            letter-spacing: 32px;
+            line-height: 40px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .8);
+            font-size: 2em;
+            color: #fff;
+            z-index: 5;
+        }
+
+        .copyright img {
+            margin: -8px 20px -8px -8px;
+            height: 40px;
+        }
+
+        .menu2 img:hover {
+            border: 3px #aa9172 solid;
+        }
+
+        .triangle {
+            border-color: #aa9172 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 5px;
+            position: relative;
+            top: 12px;
+            left: 5px;
+        }
+
+        /*******到1000px左右下方出現SCROLL BAR 是因為2014圖片旋轉有問題 套用的AOS.CSS 有問題  正在想辦法處理********************/
+        /************************[data-aos=fade-left] {transform: translate3d(100px,0,0); 出現SCROLL BAR 把2014的這條CODE 關掉就正常了*********/
+        /********手機板********************/
+        @media screen and (min-width:1141px) and (max-width:1450px) {
+            .menu2 img {
+                margin: 0 3.5em;
+            }
+        }
+
+        @media screen and (min-width:1015px) and (max-width:1140px) {
+            .menu2 img {
+                margin: 0 3em;
+            }
+        }
+
+        @media screen and (min-width:650px) and (max-width:1014px) {
+            .menu2 img {
+                margin: 0 2em;
+            }
+
+            .logo {
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width:649px) {
+            .menu2 img {
+                margin: 0 1em;
+            }
+        }
+
+        @media screen and (min-width:600px) and (max-width:800px) {
+            .logo {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width:300px) and (max-width:649px) {
+            .logo {
+                width: 120%;
+                margin: 0;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width: 600px) {
+            header a {
+                margin: 2%;
+            }
+
+            .content2 {
+                height: 25em;
+            }
+
+            .content2 a {
+                padding: 1px;
+                font-size: 30px;
+            }
+        }
+
+        /*****************************************************************/
+        .burger {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            header {
+                display: block;
+            }
+
+            header a {
+                display: none;
+            }
+
+            header li a {
+                display: inline-block;
+            }
+
+            .burger {
+                display: inline-block;
+            }
+
+            nav {
+                display: inline-block;
+            }
+
+            input {
+                display: inline-block;
+            }
+
+            .burger {
+                position: absolute;
+                top: 5%;
+                left: 17%;
+                margin: 45px;
+                color: #aa9172;
+                display: inline-block;
+                border: 0;
+                background: none;
+                outline: 0;
+                padding: 0;
+                cursor: pointer;
+                border-bottom: 4px solid currentColor;
+                width: 35px;
+                transition: border-bottom 1s ease-in-out;
+                -webkit-transition: border-bottom 1s ease-in-out;
+            }
+
+            .burger::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .burger:before {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger:after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid currentColor;
+                width: 100%;
+                margin-bottom: 5px;
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check {
+                display: none;
+            }
+
+            .burger-check:checked~.burger {
+                border-bottom: 4px solid transparent;
+                transition: border-bottom 0.8s ease-in-out;
+                -webkit-transition: border-bottom 0.8s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:before {
+                -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.burger:after {
+                -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+                transition: transform 0.5s ease-in-out;
+                -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            }
+
+            .navigation {
+                overflow: hidden;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .burger-check:checked~.navigation {
+                background-color: #fff;
+                max-height: 500px;
+                width: 200px;
+                -webkit-transition: max-height 0.5s ease-in-out;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            nav a {
+                color: inherit;
+            }
+
+            small {
+                font-size: 14px;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                list-style: none;
+
+            }
+
+            nav li a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: #aa9172;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+
+            <input class="burger-check" id="burger-check" type="checkbox">
+            <label for="burger-check" class="burger"></label>
+            <nav id="navigation1" class="navigation">
+                <ul>
+                    <li><a href="thebalvenie-index.html">首頁</a>
+                    </li>
+                    <li><a href="our-five-rare-crafts.html">手工打造百富威士忌</a>
+                    </li>
+                    <li><a href="other-crafts.html">各界工匠與技藝</a>
+                    </li>
+                    <li><a href="our-whisky-range-product.html">全系列產品</a>
+                    </li>
+                    <li><a href="ambassadors.html">百富品牌大使</a>
+                    </li>
+                    <li><a href="warehouse-24.html">百富私藏酒窖</a>
+                    </li>
+                    <li><a href="dcs3.html">酒窖管理的秘密</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/">首頁</a>
+            <a href="our-five-rare-crafts">手工打造百富威士忌<span class="triangle"></span></a>
+            <a href="other-crafts">各界工匠與技藝</a>
+            <a href="our-whisky-range-product">全系列產品</a>
+            <a href="ambassadors">百富品牌大使</a>
+            <a href="warehouse-24">百富私藏酒窖</a>
+            <a href="dcs3">酒窖管理的秘密</a>
+            <a id="logo" href="/">
+                <img class="logo" src="/static/images/balvenie-logo.svg" alt="">
+            </a>
+        </header>
+        <div class="menu2">
+            <a href="our-five-rare-crafts">
+                <div class="menu2-1"><img src="/static/images/menu2/pic1.jpg"
+                        alt=""><br />我們獨特的五大工藝<br />打造出不同凡響的百富單一麥芽威士忌
+                </div>
+            </a>
+            <a href="our-craftsmen">
+                <div class="menu2-2"><img src="/static/images/menu2/pic2.jpg" alt=""><br />我們的工匠<br />守護威士忌百年手工技藝的酒廠靈魂人物
+                </div>
+            </a>
+            <a href="the-distillery-story">
+                <div class="menu2-3"><img src="/static/images/menu2/pic3.jpg" alt=""><br />我們的故事<br />百富酒廠歷史大事記</div>
+            </a>
+            <!-- <a href=""><div class="menu2-4"><img src="images/menu2/pic4.jpg" alt="">參觀酒廠<br/>安排參訪百富酒廠</div></a> -->
+        </div>
+        <section class="content1">
+            <h1>酒廠故事</h1>
+            <video preload autoplay>
+                <source src="/static/images/the-distillery-story/c1-mp4.ogg" type="video/ogg">
+                <source src="/static/images/the-distillery-story/c1-mp4.mp4" type="video/mp4">
+                您的瀏覽器不支援此 HTML5 影片標籤
+            </video>
+        </section>
+        <section class="content2">
+            <h1>威廉格蘭之路</h1>
+            <h3>百富能夠在眾多單一麥芽威士忌產品中更顯突出，
+                都要歸功於大自然的煉金術和百年歷史之久的手作工藝。
+                我們仍堅持利用五大手工工藝製成威士忌，而我們也是蘇格蘭唯一仍堅持自種大麥，
+                使用傳統鋪地發芽技藝，同時擁有自己專屬的銅匠及桶匠的酒廠。
+                而當然，我們的首席調酒師大衛史都華也親自參與指揮每項重要的威士忌熟成過程。
+                如此方能造就堅持手工製造的單一麥芽威士忌。
+            </h3>
+            <div class="link-a">
+                <a href="#year-1892">1892</a>
+                <a href="#year-1893">1893</a>
+                <a href="#year-1923">1923</a>
+                <a href="#year-1929">1929</a>
+                <a href="#year-1962">1962</a>
+                <a href="#year-1971">1971</a>
+                <a href="#year-1974">1974</a>
+                <a href="#year-1983">1983</a>
+                <a href="#year-1987">1987</a>
+                <a href="#year-1993">1993</a>
+                <a href="#year-2004">2004</a>
+                <a href="#year-2010">2010</a>
+                <a href="#year-2014">2014</a>
+                <a href="#year-2015">2015</a>
+            </div>
+        </section>
+        <section id="year-1892" data-aos="fade-left">
+            <div class="in-1892">
+                <h1>1892</h1>
+                <h3>威廉格蘭在荒廢的百富新屋(Balvenie New House)建立了百富酒廠</h3>
+            </div>
+        </section>
+        <section id="year-1893" data-aos="fade-right">
+            <div class="in-1893">
+                <h1>1893</h1>
+                <h3>5月1日酒廠開始製作威士忌</h3>
+            </div>
+        </section>
+        <section id="year-1923" data-aos="fade-left">
+            <div class="in-1923">
+                <h1>1923</h1>
+                <h3>威廉格蘭逝世，其子約翰John，開始擴展酒廠</h3>
+            </div>
+        </section>
+        <section id="year-1929" data-aos="fade-right">
+            <div class="in-1929">
+                <h1>1929</h1>
+                <h3>原本的孵麥芽工法改成我們至今仍在使用的傳統舖地發芽技藝</h3>
+            </div>
+        </section>
+        <section id="year-1962" data-aos="fade-left">
+            <div class="in-1962">
+                <h1>1962</h1>
+                <h3>17 歲的大衛史都華開始在格蘭父子公司的酒廠工作</h3>
+            </div>
+        </section>
+        <section id="year-1971" data-aos="fade-right">
+            <div class="in-1971">
+                <h1>1971</h1>
+                <h3>正式發行第一支瓶裝的百富單一麥芽威士忌</h3>
+            </div>
+        </section>
+        <section id="year-1974" data-aos="fade-left">
+            <div class="in-1974">
+                <h1>1974</h1>
+                <h3>大衛史都華成為百富酒廠的第四任首席調酒師</h3>
+            </div>
+        </section>
+        <section id="year-1983" data-aos="fade-right">
+            <div class="in-1983">
+                <h1>1983</h1>
+                <h3>首席調酒師大衛史都華首度實驗前後在兩種不同橡木桶進行百富威士忌的熟成，
+                    此技法日後被稱為「過桶(finishing)」，
+                    而實驗成果的第一支裝瓶成品就是The Balvenie Classic (百富經典威士忌)
+                </h3>
+            </div>
+        </section>
+        <section id="year-1987" data-aos="fade-left">
+            <div class="in-1987">
+                <h1>1987</h1>
+                <h3>百富發行了百富50年單一麥芽威士忌，是業界第一瓶年份如此高的單一麥芽威士忌。</h3>
+            </div>
+        </section>
+        <section id="year-1993" data-aos="fade-right">
+            <div class="in-1993">
+                <h1>1993</h1>
+                <h3>百富為了慶祝酒廠建廠100年重新推出三款復刻酒款:百富FOUNDER'S
+                    RESERVE 干邑瓶、DoubleWood雙桶12年和15年單一酒桶單一麥芽威士忌
+                </h3>
+            </div>
+        </section>
+        <section id="year-2004" data-aos="fade-left">
+            <div class="in-2004">
+                <h1>2004</h1>
+                <h3>歡慶大衛史都華擔任百富首席調酒師 30 週年，推出百富30年單一麥芽威士忌</h3>
+            </div>
+        </section>
+        <section id="year-2010" data-aos="fade-right">
+            <div class="in-2010">
+                <h1>2010</h1>
+                <h3>推出TUN 1401號桶，也是首批TUN (融合桶)系列。
+                    大衛史都華從百富最古老的酒窖中挑出他最喜愛的幾桶珍稀酒款，
+                    再利用融合桶進行融合熟成。
+                </h3>
+            </div>
+        </section>
+        <section id="year-2014" data-aos="fade-left">
+            <div class="in-2014">
+                <h1>2014</h1>
+                <h3>在推出9批次的TUN 1401號桶之後，換成TUN 1509號桶上市</h3>
+            </div>
+        </section>
+        <section id="year-2015" data-aos="fade-right">
+            <div class="in-2015">
+                <h1>2015</h1>
+                <h3>推出百富首席調酒師典藏系列珍稀原酒，利用珍稀酒款及書籍，
+                    傳承了大衛史都華在威士忌產業裡超過半世紀的豐富經驗及知識。
+                </h3>
+            </div>
+        </section>
+        <footer></footer>
+        <div class="copyright">
+            <b> 禁止酒駕 <img src="/static/images/drive-icon.png" alt="">酒後不開車 安全有保障</b>
+        </div>
+    </wrapper>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        })
+    </script>
+</body>
+
+</html>
